@@ -1,0 +1,624 @@
+/* Thème de couleurs */
+@import url(theme.css);
+
+/* Générique */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/* [TPv34] Point 11 (boni) */
+/* Formatage du sigle de devise en français */
+.montant-fr::after {
+	content: ' $';
+}
+/* Formatage du sigle de la devise en anglais */
+.montant-en::before {
+	content: '$';
+}
+
+html {
+	font-size: clamp(18px, 2vw, 24px);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans';
+}
+
+a,
+a:active,
+a:visited,
+a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Conteneur */
+.conteneur {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+}
+
+/* Barre du haut */
+nav.barre-haut {
+	font-size: 0.9rem;
+	background-color: var(--clr-fond-principale);
+	color: var(--clr-texte-tertiaire);
+}
+
+nav.barre-haut {
+	margin: 0;
+	padding: 0.5rem;
+	padding-right: 0.5rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav.barre-haut a {
+	list-style: none;
+	text-align: center;
+	width: 2rem;
+	margin: 0 0.2rem;
+	padding: 0.2rem;
+	border: 1px solid var(--clr-bordure-secondaire);
+	background-color: var(--clr-fond-tertiaire);
+	border-radius: 0.3rem;
+}
+
+nav.barre-haut a.actif {
+	background-color: var(--clr-fond-actif);
+	color: var(--clr-texte-secondaire);
+}
+
+/* Barre du logo, de recherche, et panier */
+.barre-logo {
+	width: 80%;
+	margin: 0.5rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.barre-logo .logo img {
+	width: clamp(125px, 25vw, 250px);
+}
+
+.barre-logo .recherche {
+	width: 100%;
+	flex-grow: 1;
+	height: 50px;
+	border: 1px solid var(--clr-fond-tertiaire);
+	border-radius: 50px;
+	padding: 0 1rem;
+	font-size: 1rem;
+}
+
+.barre-logo .panier-icone {
+	position: relative;
+}
+
+.barre-logo .panier-icone label {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.barre-logo .panier-icone input {
+	display: none;
+}
+
+.barre-logo .panier-icone .sommaire-panier {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 90%;
+	width: 60vw;
+	min-width: 300px;
+	max-width: 400px;
+	padding: 0.5rem 0.75rem;
+	font-size: 0.9rem;
+	border-top: 0.4rem solid var(--clr-fond-panier);
+	background-color: var(--clr-fond-claire);
+	flex-direction: column;
+	/* 1 de moins que le menu en mobile et 1 de plus que le menu sur écran plus large */
+	z-index: 100;
+	box-shadow: var(--boxshadow-principal);
+}
+
+#panier-cc:checked + .sommaire-panier {
+	display: flex;
+}
+
+.barre-logo .panier-icone .sommaire-panier > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.barre-logo .panier-icone .sommaire-panier .nb-articles {
+	font-weight: bold;
+}
+
+.barre-logo .panier-icone .sommaire-panier .sous-titre {
+	font-size: 0.8rem;
+}
+
+.barre-logo .panier-icone .sommaire-panier .sous-total {
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--clr-fond-panier);
+}
+
+.barre-logo .panier-icone .sommaire-panier .btn-afficher-panier {
+	font-size: 0.9rem;
+	background-color: var(--clr-fond-panier);
+	color: var(--clr-texte-secondaire);
+	padding: 0.25rem;
+	border-radius: 3px;
+	justify-content: center;
+	margin: 0.5rem 0;
+}
+
+.barre-logo .burger {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/* Navigation principale */
+#cc-btn-responsive {
+	display: none;
+}
+
+nav.principale {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	translate: -100%;
+	background-color: var(--clr-fond-menu-responsive);
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	row-gap: 1.5rem;
+	padding: 1rem;
+	z-index: 101;
+	box-shadow: var(--boxshadow-principal);
+}
+
+#cc-btn-responsive:checked+nav.principale {
+	display: flex;
+	translate: 0;
+}
+
+nav.principale .menu-controle {
+	text-align: right;
+	width: 100%;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+nav.principale .separateur {
+	width: 100%;
+	height: 2px;
+	background-color: var(--clr-fond-principale);
+}
+
+nav.principale a.actif {
+	border-bottom: 3px solid var(--clr-fond-actif);
+}
+
+/* Main : Toutes les pages */
+main {
+	flex-grow: 1;
+	width: 95vw;
+	margin: 2rem auto;
+}
+
+/* Main : Page d'accueil */
+main.page-accueil .amorce {
+	background-image: url(../images/accueil.jpg);
+	background-size: cover;
+	background-position: 100% 60%;
+	padding: 3rem;
+	text-align: center;
+	color: var(--clr-texte-secondaire);
+}
+
+main.page-accueil .amorce h1 {
+	font-size: clamp(1.5rem, 4vw, 4rem);
+	margin: auto;
+}
+
+main.page-accueil .amorce h2 {
+	font-size: clamp(1rem, 2vw, 2rem);
+}
+
+main.page-accueil .principal {
+	margin: 1rem auto;
+	width: 90vw;
+}
+
+/* Main : Page Teeshirts/Casquettes/Hoodies */
+main.page-produits .amorce {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+main.page-produits .amorce .controle form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 0.75rem;
+	font-size: 0.9rem;
+}
+
+main.page-produits .amorce .controle form > div {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+main.page-produits .amorce .controle select {
+	margin-left: 0.5rem;
+	padding: 0.5rem 3rem 0.5rem 0.5rem;
+	border-radius: 1rem;
+}
+
+/* Pages des produits (teeshirts, etc.) */
+main.page-produits .principal {
+	margin: 1rem auto;
+	width: 90vw;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+main.page-produits .principal .produit {
+	position: relative;
+	width: 33%;
+	min-width: 200px;
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Conteneur de l'info du produit (nom et prix) */
+main.page-produits .principal .produit .prd-info {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+/* Bouton Ajout au panier */
+main.page-produits .principal .produit .btn-ajouter {
+	margin: 1rem;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+/* Pastille (ou badge) contenant les ventes */
+main.page-produits .principal .produit .ventes {
+	position: absolute;
+	top: -0.5rem;
+	left: -0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	background-color: var(--clr-fond-badge);
+	color: var(--clr-texte-secondaire);
+	border-radius: 50%;
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+
+main.page-produits .principal .produit .image img {
+	width: 100%;
+}
+
+main.page-produits .principal .produit .nom {
+	text-align: center;
+}
+
+main.page-produits .principal .produit .prix {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Panier d'achats */
+main.page-panier .amorce {
+	text-align: center;
+}
+
+main.page-panier .principal {
+	margin: 0;
+}
+
+main.page-panier .principal .liste-panier {
+	max-width: 800px;
+	width: 80vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+main.page-panier .principal .liste-panier article.item-panier {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem 0;
+	padding: 1rem;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+main.page-panier .principal .liste-panier article.item-panier > div {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+}
+
+main.page-panier .principal .liste-panier article.item-panier button {
+	/* border-radius: 1rem; */
+	cursor: pointer;
+	border: none;
+	background-color: white;
+	font-size: 1.5rem;
+}
+
+main.page-panier .principal .liste-panier article.item-panier div.qte-prix {
+	width: 70%;
+	align-self: flex-end;
+	font-size: 0.85rem;
+}
+
+main.page-panier .principal .liste-panier article.item-panier div.qte-prix > div {
+	display: flex;
+	flex-direction: column;
+}
+
+main.page-panier .principal .liste-panier article.item-panier div.qte-prix input {
+	width: 50px;
+	padding: 0.25rem;
+}
+
+main.page-panier .principal .liste-panier article.item-panier div.qte-prix div.quantite .valeur-qte > * {
+	vertical-align: middle;
+}
+
+main.page-panier .principal .liste-panier article.item-panier .image {
+	max-width: 80px;
+}
+
+main.page-panier .principal .liste-panier article.item-panier .image img {
+	width: 100%;
+}
+
+main.page-panier .principal .liste-panier article.item-panier .nom {
+	text-align: left;
+	flex: 1;
+	margin-left: 1rem;
+}
+
+main.page-panier .principal .liste-panier article.item-panier .montant {
+	text-align: right;
+}
+
+main.page-panier .principal .liste-panier span.btn-supprimer {
+	text-align: right;
+	width: 25px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+main.page-panier .principal .sommaire-panier {
+	max-width: 800px;
+	width: 80vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	row-gap: 0.5rem;
+	font-size: 0.9rem;
+	border-top: 2px solid var(--clr-fond-tertiaire);
+	padding: 0.5rem 0;
+	margin-top: 0.5rem;
+}
+
+main.page-panier .principal .sommaire-panier .nb-articles {
+	text-align: left;
+}
+
+main.page-panier .principal .sommaire-panier .sous-total {
+	text-align: center;
+}
+
+main.page-panier .principal .sommaire-panier .btn-commander {
+	text-align: center;
+	margin-left: 1rem;
+	padding: 0.25rem 0.5rem;
+	border: 1px solid var(--clr-bordure-secondaire);
+	border-radius: 5px;
+	background-color: var(--clr-fond-boutons);
+	color: var(--clr-texte-secondaire);
+	cursor: pointer;
+}
+
+/* Pied de page */
+footer {
+	background-color: var(--clr-fond-tertiaire);
+	color: var(--clr-texte-secondaire);
+	font-size: 0.8rem;
+	padding-top: 1.5rem;
+}
+
+footer h2 {
+	text-align: center;
+}
+
+footer div.contenu {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	text-align: center;
+
+	row-gap: 1rem;
+}
+
+footer div.contenu section {
+	display: flex;
+	flex-direction: column;
+}
+
+footer div.contenu section nav {
+	display: flex;
+	flex-direction: column;
+}
+
+footer .da {
+	font-size: 0.7rem;
+	text-align: center;
+	margin: 2rem;
+}
+
+	/* Point 8: Le badge du panier */
+	span.badge-panier  {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		line-height: 27px;
+		width: 1.5rem;
+		height: 1.5rem;
+		background-color: var(--clr-fond-panier);
+		color: var(--clr-texte-secondaire);
+		border-radius: 50%;
+		font-size: 0.6rem;
+		font-weight: bold;
+		right: 7vw;
+		top: 9vh;
+		z-index: 2;
+	}
+
+@media (min-width: 1000px) {
+	/* Barre Logo */
+	.barre-logo {
+		flex-wrap: nowrap;
+	}
+
+	.barre-logo .logo img {
+		width: clamp(250px, 35vw, 350px);
+	}
+
+	.barre-logo .recherche {
+		min-width: 50%;
+	}
+
+	.barre-logo .panier-icone {
+		order: 1;
+	}
+
+	.barre-logo .panier-icone .sommaire-panier {
+		width: 25vw;
+	}
+
+	.barre-logo .burger {
+		display: none;
+	}
+
+	/* Navigation principale */
+	nav.principale {
+		translate: 0;
+		display: flex;
+		position: relative;
+		top: initial;
+		left: initial;
+		bottom: initial;
+		background-color: initial;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		column-gap: 1.5rem;
+		padding: 0;
+		z-index: 99;
+		box-shadow: none;
+	}
+
+	nav.principale .separateur {
+		width: 15px;
+		height: 15px;
+		border-radius: 25px;
+		background-color: var(--clr-fond-principale);
+		margin: 0 2rem;
+	}
+
+	nav.principale .menu-controle {
+		display: none;
+	}
+
+	/* Page d'accueil */
+	main.page-accueil .amorce h1 {
+		margin: auto 12vw;
+	}
+
+	main.page-accueil .principal {
+		margin: 1rem auto;
+		width: 70vw;
+	}
+
+	/* Page Produits (Teeshirts, etc.) */
+	main.page-produits .amorce .controle {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 0.75rem;
+	}
+
+	main.page-produits .amorce .controle>div {
+		margin: 0 1rem;
+	}
+
+	/* Panier */
+	main.page-panier .principal .sommaire-panier {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	/* Point 6: Message lorsque le panier est vide */
+	main.page-panier .principal .message {
+		justify-self: center;
+		align-self: center;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	/* Pied de page  */
+	footer div.contenu {
+		flex-direction: row;
+		justify-content: center;
+		align-items: initial;
+		text-align: initial;
+		column-gap: 3rem;
+	}
+
+	span.badge-panier{
+		top: 16vh;
+		right: 9vw;
+	}
+}

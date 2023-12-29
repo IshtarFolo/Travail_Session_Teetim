@@ -1,0 +1,116 @@
+{
+	"entete": {
+		"altLogo": "Accueil",
+		"placeholderRecherche": "Mots-clés de votre recherche",
+		"menuTeeshirts": "Teeshirts",
+		"menuCasquettes": "Casquettes",
+		"menuHoodies": "Hoodies",
+		"menuAide": "Aide",
+		"menuAPropos": "À propos de nous"
+	},
+	"pp": {
+		"achatsTitre": "Vos achats",
+		"navAchatsFaq": "Foire aux questions",
+		"navAchatsLivraison": "Livraison de votre colis",
+		"navAchatsConditions": "Conditions de vente",
+		"navAchatsConfidentialite": "Politique de confidentialité",
+		"aProposTitre": "À propos de teeTIM",
+		"aProposCompagnie": "La compagnie",
+		"aProposEquipe": "L'équipe",
+		"aProposEmplois": "Emplois",
+		"joindreTitre": "Nous joindre",
+		"joindreTelEtiquette": "Sans frais : ",
+		"joindreCourrielEtiquette": "Courriel : ",
+		"droits": "Tous droits réservés, teeTIM"
+	},
+	"index": {
+		"metaTitre": "fibre naturelle ... conception artificielle",
+		"metaDesc": "Page d'accueil du concepteur de vêtements 100% fait au Québec, conçus par les étudiants du TIM à l'aide de designs produits par intelligence artificielle, et fabriqués avec des fibres 100% naturelles et biologiques.",
+		"amorceTitre": "Teeshirts, hoodies, et casquettes fabriqués au Québec 💯",
+		"amorceSousTitre": "Conçus au TIM avec ❤️",
+		"amorceSousTitre2": "avec un p'tit peu d'aide de DALL-E 😉",
+		"para1": "Aujourd'hui, le teeshirt est un vêtement incontournable dans le garde-robe de chacun. Et à l’aire où la question environnementale se pose plus que jamais, on préfère les teeshirts fabriqués au Québec afin de réduire l'impact environnemental et mettre en avant l’artisanat local.",
+		"para2": "Teeshirt en V, col rond, ample ou ajusté, à manches courtes ou à manches longues pour les plus frileux, uni ou à motifs pour styliser une tenue… Le teeshirt est disponible dans une variété de couleurs, de styles et de motifs."
+	},
+	"catalogue": {
+		"filtreEtiquette": "Filtrer par : ",
+		"filtreTous": "Tous les produits",
+		"triEtiquette": "Trier par : ",
+		"triAlea": "Aléatoire",
+		"triPrixAsc": "Prix / ascendant",
+		"triPrixDesc": "Prix / descendant",
+		"triNomAsc": "Nom / ascendant",
+		"triNomDesc": "Nom / descendant",
+		"triNouveaute": "Nouveauté",
+		"triVentes": "Meilleur vendeur"
+	},
+	"teeshirts": {
+		"metaTitre": "teeshirts 100% cotton bio",
+		"metaDesc": "Nos teeshirts sont faits avec les meilleurs matériaux, fabriqués au Québec, conçus par ...",
+		"titrePage": "Nos teeshirts"
+	},
+	"casquettes": {
+		"metaTitre": "casquettes stylées et confortable",
+		"metaDesc": "[IMPORTANT de bien définir la description de la page casquettes avant de déployer le site !!!]",
+		"titrePage": "Nos casquettes"
+	},
+	"hoodies": {
+		"metaTitre": "chandails à capuchon",
+		"metaDesc": "[IMPORTANT de bien définir la description de la page hoodies avant de déployer le site !!!]",
+		"titrePage": "Nos chandails à capuchon"
+	},
+	"panier": {
+		"metaTitre": "panier d'achats",
+		"metaDesc": "",
+		"titrePage": "Votre panier d'achats",
+		"nbArticles": "Nombre d'articles : ",
+		"sousTotal": "Sous-total : ",
+		"btnCommander": "Commander",
+		"messageVide": "Vous n'avez aucun article dans votre panier &#128542;"
+	},
+	"aide": {
+		"metaTitre": "nous sommes à l'écoute",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Aide"
+	},
+	"apropos": {
+		"metaTitre": "à propos de nous",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Qui sommes nous ?"
+	},
+	"faq": {
+		"metaTitre": "réponses à toutes vos questions",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Question fréquentes"
+	},
+	"livraison": {
+		"metaTitre": "livraison et retour",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Livraison et retour"
+	},
+	"conditions": {
+		"metaTitre": "conditions de vente",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Conditions de vente"
+	},
+	"confidentialite": {
+		"metaTitre": "politique de confidentialité",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Politique de confidentialité"
+	},
+	"compagnie": {
+		"metaTitre": "notre compagnie",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Notre compagnie"
+	},
+	"equipe": {
+		"metaTitre": "équipe",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "L'équipe"
+	},
+	"emplois": {
+		"metaTitre": "emplois",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Offres d'emplois"
+	}
+}

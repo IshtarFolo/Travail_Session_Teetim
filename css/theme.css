@@ -1,0 +1,18 @@
+:root {
+    --clr-fond-principale: #000;
+    --clr-fond-tertiaire: #4e4e4e;
+    --clr-fond-claire: #efefef;
+    --clr-fond-actif: #f09e0c;
+    --clr-fond-panier: #ae6e00;
+    --clr-fond-boutons: #087e00;
+    --clr-fond-menu-responsive: #ece7de;
+    --clr-fond-badge: #087e00;
+
+    --clr-texte-secondaire: #fff;
+    --clr-texte-tertiaire: #c5c5c5;
+    --clr-texte-actif: #000;
+
+    --clr-bordure-secondaire: #000;
+
+    --boxshadow-principal: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

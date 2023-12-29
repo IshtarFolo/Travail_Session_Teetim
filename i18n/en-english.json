@@ -1,0 +1,116 @@
+{
+	"entete": {
+		"altLogo": "Homepage",
+		"placeholderRecherche": "Search Keywords",
+		"menuTeeshirts": "Teeshirts",
+		"menuCasquettes": "Caps",
+		"menuHoodies": "Hoodies",
+		"menuAide": "Help",
+		"menuAPropos": "About Us"
+	},
+	"pp": {
+		"achatsTitre": "My Orders",
+		"navAchatsFaq": "Frequently Asked Questions",
+		"navAchatsLivraison": "Package Delivery",
+		"navAchatsConditions": "Sales Conditions",
+		"navAchatsConfidentialite": "Privacy Policy",
+		"aProposTitre": "About teeTIM",
+		"aProposCompagnie": "Our Company",
+		"aProposEquipe": "Team",
+		"aProposEmplois": "Jobs",
+		"joindreTitre": "Contact Us",
+		"joindreTelEtiquette": "Toll Free: ",
+		"joindreCourrielEtiquette": "Email: ",
+		"droits": "teeTIM - All Rights Reserved"
+	},
+	"index": {
+		"metaTitre": "natural fibers ... artificial design",
+		"metaDesc": "Home page of the designer of clothing 100% made in Quebec, designed by TIM students using designs produced by artificial intelligence, and made with 100% natural and organic fibers.",
+		"amorceTitre": "Teeshirts, hoodies and caps made 💯 Québec",
+		"amorceSousTitre": "Designed with ❤️ at TIM Maisonneuve",
+		"amorceSousTitre2": "with a little help from DALL-E 😉",
+		"para1": "Today, the t-shirt is an essential item of clothing in everyone's wardrobe. And in an area where the environmental question arises more than ever, we prefer t-shirts made in Quebec in order to reduce the environmental impact and highlight local craftsmanship.",
+		"para2": "V-shaped t-shirt, round neck, loose or fitted, short-sleeved or long-sleeved for those who are more chilly, plain or patterned to stylize an outfit... The t-shirt is available in a variety of colors, styles and patterns."
+	},
+	"catalogue": {
+		"filtreEtiquette": "Filter By: ",
+		"filtreTous": "All Products",
+		"triEtiquette": "Sort By: ",
+		"triAlea": "Random",
+		"triPrixAsc": "Price / ascending",
+		"triPrixDesc": "Price / descending",
+		"triNomAsc": "Name / ascending",
+		"triNomDesc": "Name / descending",
+		"triNouveaute": "New Item",
+		"triVentes": "Best Seller"
+	},
+	"teeshirts": {
+		"metaTitre": "100% organic cotton t-shirts",
+		"metaDesc": "Our t-shirts are made with the best materials, made in Quebec, designed by...",
+		"titrePage": "T-Shirts"
+	},
+	"casquettes": {
+		"metaTitre": "stylish and comfortable caps",
+		"metaDesc": "[IMPORTANT to clearly define the description of the caps page before deploying the site!!!]",
+		"titrePage": "Caps"
+	},
+	"hoodies": {
+		"metaTitre": "hoodies",
+		"metaDesc": "[IMPORTANT to clearly define the description of the hoodies page before deploying the site!!!]",
+		"titrePage": "Hoodies & Sweatshirts"
+	},
+	"panier": {
+		"metaTitre": "shopping cart",
+		"metaDesc": "",
+		"titrePage": "Your Shopping Cart",
+		"nbArticles": "Total items: ",
+		"sousTotal": "Sub-Total: ",
+		"btnCommander": "Complete Order",
+		"messageVide": "Your shopping cart is empty &#128542;"
+	},
+	"aide": {
+		"metaTitre": "we are listening",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Help"
+	},
+	"apropos": {
+		"metaTitre": "about us",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Who Are We?"
+	},
+	"faq": {
+		"metaTitre": "you have questions, we have answers",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Frequently Asked Questions"
+	},
+	"livraison": {
+		"metaTitre": "shipping and returns",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Shipping & Returns"
+	},
+	"conditions": {
+		"metaTitre": "sale conditions",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Sales Conditions"
+	},
+	"confidentialite": {
+		"metaTitre": "privacy",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Our Privacy Policy"
+	},
+	"compagnie": {
+		"metaTitre": "company",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Our Company"
+	},
+	"equipe": {
+		"metaTitre": "team",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "The Team"
+	},
+	"emplois": {
+		"metaTitre": "jobs",
+		"metaDesc": "[IMPORTANT à compléter]",
+		"titrePage": "Available Jobs"
+	}
+}
